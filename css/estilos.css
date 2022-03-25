@@ -1,8 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
+
 
 body {
     font-family: 'open sans';
@@ -10,7 +11,7 @@ body {
 
 .contenedor {
     padding: 60px 0;
-    width: 90%;
+    width: 85%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
@@ -21,6 +22,11 @@ body {
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
+}
+
+.links{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
 }
 
 /* Header */
@@ -40,22 +46,36 @@ header {
 }
 
 nav{
+    background: #414141;
+    color: white;
     text-align: right;
-    padding: 30px 50px 0 0;
+    padding: 1.2rem 0;
+    position:fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+
 }
 
 nav > a{
+    padding: 0.5rem 1rem;
     color:#fff;
     font-weight: 300;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 20px;
+    transition: all 0.4s linear;
+    border-radius: 5px;
 }
 
 nav > a:hover{
-    text-decoration: underline;
+    background: #8f4fe2ac;
+
+
 }
 
 header .textos-header{
+    padding-top: 3rem;
     display: flex;
     height: 430px;
     width: 100%;
@@ -82,7 +102,7 @@ header .textos-header{
     width: 100%;
 }
 
-/* About us */
+/* Sobre nosotros */
 
 main .sobre-nosotros{
     padding: 30px 0 60px 0;
@@ -178,7 +198,7 @@ main .sobre-nosotros{
     transform: scale(1);
 }
 
-/* Clients */
+/* Tarjetas */
 
 .cards{
     display: flex;
@@ -211,11 +231,11 @@ main .sobre-nosotros{
 }
 
 .cards .card > .contenido-texto-card p{
-    font-weight: 300;
+    font-weight: 500;
     padding-top: 5px;
 }
 
-/*  Our team */
+/*  Proyecto */
 
 .about-services{
     background: #f2f2f2;
@@ -260,23 +280,33 @@ main .sobre-nosotros{
 
 footer{
     background: #414141;
-    padding: 60px 0 30px 0;
+    padding: 10px 0 5px 0;
     margin: auto;
     overflow: hidden;
 }
 
+.titlefoo{
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+
+}
 .contenedor-footer{
     display: flex;
     width: 90%;
     justify-content: space-evenly;
     margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+   
 }
+
 
 .content-foo{
     text-align: center;
 }
+
 
 .content-foo h4{
     color: #fff;
@@ -289,12 +319,7 @@ footer{
     color: #ccc;
 }
 
-.titulo-final{
-    text-align: center;
-    font-size: 24px;
-    margin: 20px 0 0 0;
-    color: #9e9797;
-}
+
 
 @media screen and (max-width:900px){
     header{

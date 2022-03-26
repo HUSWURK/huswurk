@@ -455,7 +455,18 @@ footer{
 
 @media screen and (max-width:1176px){
 
-   .menu-icon{
+    .logo{
+        color:#41414100;
+        padding-left: 6rem;
+        line-height: 1.5em;
+        font-size: smaller;
+        justify-content: center;
+        position: fixed;
+        display:none ;
+
+    }
+   
+    .menu-icon{
        display: none;
        cursor: pointer;
    }
@@ -466,7 +477,9 @@ footer{
     }
 
     .navigation ul{
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .navigation ul.show {
@@ -479,8 +492,9 @@ footer{
     }
     
     .navigation ul li a{
+        font-size: 12px;
         display:block;
-        padding: 0.5rem 0;
+        padding: 0.2rem 0;
         font-weight: 300;
         text-decoration: none;
         margin-right: 20px;

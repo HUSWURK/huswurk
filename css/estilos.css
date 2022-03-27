@@ -55,7 +55,7 @@ body {
     text-align: center;
     background: #414141;
     font-size:15px;
-    padding: 1.2rem 0;
+    padding: 0.6rem 0;
     position: fixed;
     left: 0;
     top: 0;
@@ -453,16 +453,29 @@ footer{
     }
 }
 
+@media screen and (max-width:1415px){
+
+    .logo{
+        color:#811ad600;
+        padding-left: 10rem;
+        padding: 0;
+        line-height: 1.5em;
+        font-size: 0.1pt;
+        justify-content: center;
+        line-height: 0;
+
+    }
+
+    .nav{
+        display: inline-flex;
+    }
+
+
 @media screen and (max-width:1176px){
 
     .logo{
-        color:#41414100;
-        padding-left: 6rem;
-        line-height: 1.5em;
-        font-size: smaller;
-        justify-content: center;
-        position: fixed;
-        display:none ;
+        padding-bottom: 0;
+        line-height:0pt;
 
     }
    
@@ -473,13 +486,14 @@ footer{
     
     .navigation{
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 0.2rem;
     }
 
     .navigation ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding-top: 0;
     }
     
     .navigation ul.show {
